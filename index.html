@@ -57,21 +57,33 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 0;
+            padding: 15px 0;
             margin-bottom: 30px;
             animation: fadeInDown 1s ease;
         }
 
-        .logo {
+        .logo-container {
             display: flex;
             align-items: center;
             gap: 15px;
-            text-decoration: none;
         }
 
-        .logo-img {
-            width: 50px;
-            height: 50px;
+        .logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(58, 143, 254, 0.25);
+            overflow: hidden;
+            border: 3px solid white;
+        }
+
+        .logo img {
+            width: 80%;
+            height: 80%;
             object-fit: contain;
         }
 
@@ -847,17 +859,18 @@
 </head>
 <body>
     <div class="container">
-        <!-- Header -->
+        <!-- Header with rounded PNG logo -->
         <header>
-            <a href="#" class="logo">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAABWUlEQVR4nO3cTUoDQRSA4S8aFcGdG8GtK3f+BkFQcCciLgQ3ggsRdyK4EVwI/gH/hiAouFBcuBEXQvQ0dNnDvGGmCk7V+8CBbqCb5JuZ7ukBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIDeG5JmJN1KepL0IelL0l7Sq6Q3SWtJc0lD0h9LSUdJX5I2knYlHSUdJG0l7SXtJM1Jf6wlvUv6lLQq6ShpL2kjaSNpJWlK+mMuaSXpIOlZ0qGknaS1pJWkpaQ56Y+JpIWktaQnSZuS9pJWkhaS5pImpD9GkqaSZpIeJT2UtJM0lzSVNCL9dSVpJOlG0r2k+5K2kqaSbiUNSX8NJI0l3Uq6K2kraSJpLGlEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD6Z0z6Bk9gJ8V3zT4YAAAAAElFTkSuQmCC" alt="VendorPro Logo" class="logo-img">
-                <div class="logo-text">VendorPro</div>
-            </a>
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="images/amena logo.png" alt="Amena Enterprise Logo" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="logo-text">Amena Enterprise</div>
+            </div>
             
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Courses</a></li>
                     <li><a href="#">Resources</a></li>
                     <li><a href="#">Community</a></li>
                     <li><a href="#">Pricing</a></li>
